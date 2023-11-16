@@ -1,0 +1,94 @@
+/* *{outline: red solid} */
+
+@import url(./bootstrap.css);
+
+.navigation {
+  padding: 0 1.25rem;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  min-height: 58px;
+}
+.w-MS{
+  width: 71.5vw !important;
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    width: 100px;
+    padding: 1.5rem 0;
+    flex-direction: column;
+    border: 0;
+    min-height: 100vh;
+  }
+    .logo-display {
+      display: block;
+    }
+}
+
+@media (min-width: 1200px) 
+{
+  .navigation {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navigation {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; 
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+    .w-MS {
+      width: 100% !important;
+    }
+
+  .logo-display{
+    display: none;
+  }
+}
+
+.bg-primary .nav-pills .nav-link{
+  color:white;
+  margin: 0.3rem;
+}
+
+.bg-primary .nav-pills .nav-link:is(:hover, .active) {
+  color: var(--bs-primary);
+  background-color: var(--bs-gray-100);
+}
+
+.bgsocial{
+  background: url("/public/Chirples.png") no-repeat fixed center/cover, var(--bs-primary);
+  background-blend-mode:soft-light;
+}
+
+::selection{
+  background-color: var(--bs-primary-bg-subtle);
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--bs-gray-100);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--bs-primary-bg-subtle);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bs-primary);
+}
+
+.bg-card-body{
+  background-color: var(--bs-body-bg);
+}
+
+.bg-card-body:is(:hover,.active) {
+  background-color: var(--bs-primary-bg-subtle);
+}
